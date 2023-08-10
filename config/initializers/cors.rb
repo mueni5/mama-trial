@@ -14,3 +14,14 @@
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
+
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'http://localhost:4000' # Replace with the origin of your frontend application
+  
+      resource '/diet_blogs',
+        headers: :any,
+        methods: [:get]
+    end
+end
+  
