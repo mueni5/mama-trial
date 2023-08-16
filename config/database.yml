@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: linda_mama_backend_api_production
-  username: linda_mama_backend_api
-  password: <%= ENV["LINDA_MAMA_BACKEND_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

@@ -19,6 +19,7 @@ This is the backend API for the Linda Mama application, a forum where expecting 
     POST /messages: Create a new message.
     PATCH /messages/:id: Update a message by its ID.
     DELETE /messages/:id: Delete a message by its ID.
+    GET /diet-blogs: Fetch all blogs.
 ############# Mothers endpoints to be added.
 
 ### Author 
